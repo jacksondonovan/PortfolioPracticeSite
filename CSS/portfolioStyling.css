@@ -1,0 +1,6 @@
+.container ul{
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  background-color: #777;
+}
