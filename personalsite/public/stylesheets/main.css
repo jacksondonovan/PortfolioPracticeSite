@@ -1,0 +1,152 @@
+html{
+  height:100%;
+}
+body{
+  background-image: url('http://i.amz.mshcdn.com/uCe8lx_XUApCyfbrwme8kSq2SHs=/950x534/2015%2F12%2F10%2F59%2Fvermont_lak.c7bef.jpg');
+  background-size: cover;
+  background-image: no-repeat;
+  height:100%;
+}
+
+h1{
+  color:#FFF;
+  font-size: 40px;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.everything{
+  min-height: 100%;
+}
+
+.heads{
+  display: flex;
+  justify-content: flex-end;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  margin: 2px 12px;
+}
+
+
+
+.texting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.heads ul{
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+}
+
+a{
+  margin-left: 50px;
+}
+
+.test{
+  min-height: 100%;
+}
+.jumbotron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height:440px;
+}
+.jumbotron h2{
+  color: #FFF;
+  font-size: 45px;
+}
+img{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:80%;
+}
+.transbutton{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+  width: 10%;
+  height: 40px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  font-size: 30px;
+}
+.transbutton:hover{
+  background-color: #FFF;
+  color: #000;
+}
+.restof{
+  display: flex;
+  align-items: flex-end;
+  /*min-height:100%;*/
+}
+.butt{
+  height:50px;
+  margin-top: 50px;
+}
+
+#gallery{
+  min-height: 100%;
+  margin:0px;
+  width:100%;
+  background-image: url('http://eskipaper.com/images/metal-wallpaper-8.jpg');
+  background-color: #999;
+}
+table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:80%;
+  border: 2px solid #FFF;
+}
+
+td{
+  margin: 10px 20px;
+  border:10px solid #FFF;
+}
+
+.details{
+  height: 520px;
+  background-color: #999;
+  border: 5px solid #FFF;
+}
+.middle{
+  display: flex;
+  align-items: center;
+  height:700px;
+}
+h3{
+  margin-left: 10px;
+}
+h4{
+  color: #FFF;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.border{
+  border: 2px solid black;
+  margin: 10px 2px;
+}

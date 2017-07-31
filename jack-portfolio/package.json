@@ -1,0 +1,17 @@
+{
+  "name": "jack-portfolio",
+  "version": "1.0.0",
+  "description": "Jackson's personal projects, interests and contact info.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jackson Donovan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}

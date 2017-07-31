@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jackson Donovan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+  <body>
+    <header class="container allheads">
+      <nav class="row">
+        <div class="head col-sm-4" align="left">
+          <h1>Jackson</h1>
+        </div>
+        <div class="heads col-sm-8" align="right">
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/more">More</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <div class="container test">
+      <div class="jumbotron" align="center">
+        <h2 id="slider_text">{{title}}</h2>
+      </div>
+      <div class="row col-sm-12 butt" align="center">
+        <a href="#gallery">
+          <button class="transbutton" type="button" name="button">▾</button>
+        </a>
+
+      </div>
+    </div>
+    <div class="container" id="gallery">
+      <div class="row middle">
+        <table class="col-sm-7">
+          <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Poker-sm-214-Js.png" alt=""></td>
+            <td><img src="https://ih1.redbubble.net/image.24047052.4230/sticker,375x360-bg,ffffff.png" alt=""></td>
+            <td><img src="https://code-pilot.herokuapp.com/images/code-pilot.png" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="http://cfile215.uf.daum.net/image/18237A554D9483681A05A6" alt=""></td>
+            <td><img src="http://cfile215.uf.daum.net/image/18237A554D9483681A05A6" alt=""></td>
+            <td><img src="http://cfile215.uf.daum.net/image/18237A554D9483681A05A6" alt=""></td>
+          </tr>
+        </table>
+        <div class="col-sm-5">
+          <div class="details">
+            <h4>Project Details</h4>
+            <div class="border">
+              <h3>TITLE</h3>
+              <p>The Project Gallery</p>
+            </div>
+            <div class="border">
+              <h3>DATE</h3>
+              <p>2017</p>
+            </div>
+            <div class="border">
+              <h3>STACK</h3>
+              <p>These projects will range from front-end to back-end applications.</p>
+            </div>
+            <div class="border">
+              <h3>DESCRIPTION</h3>
+              <p>The projects range from simple single-user applications like card games, to applications that help people link up and meet eachother. These diverse projects show the balance between my personal interests and productive/commercial-based projects. This gallery will always be 1% done. I'm always looking for ideas to help strengthen, grow and flex my programming knowledge. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <table>
+
+      </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+    <script type="text/javascript">
+            $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+    </script>
+  </body>
+</html>
